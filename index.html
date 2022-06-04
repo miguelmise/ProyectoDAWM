@@ -1,62 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <title>MiguelMise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css//estilo.css">
 </head>
+
 <body>
-        <!-- Header -->
-    <div class="header">
-      <h1>Miguel Angel Mise</h1>
-      <p>Desarrollo <b>de</b> Software.</p>
-    </div>
+
+  <div class="header">
+    <h1>Miguel Angel Mise</h1>
     
-    <!-- Navigation Bar -->
-    <div class="navbar">
-      <a href="#">Certificaciones</a>
-      <a href="#">Habilidades</a>
-      <a href="#">Contactame</a>
-      <a href="#">Acerca de mi</a>
-    </div>
-    
-    <!-- The flexible grid (content) -->
-    <div class="row">
-      <div class="side">
-        
-        <h3>More Text</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <div class="fakeimg" style="height:60px;">Image</div><br>
-        <div class="fakeimg" style="height:60px;">Image</div><br>
-        <div class="fakeimg" style="height:60px;">Image</div>
-      </div>
-      <div class="main">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        <br>
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-    </div>
-    
-    <!-- Footer -->
-    <div class="footer">
-      <div>
-        <h2>Acerca de mí</h2>
-            <div class="img_perfil" style="height:200px;">
-                <img id="perfil_foto" src="./imagenes//imagen_perfil_0.JPG" alt="perfil">
+    <p style="color: aliceblue;">Estudio ingenieria, Me gusta la tecnología, los deportes y tengo
+      un celular chino.</p>
+  </div>
+
+  <div class="topnav">
+    <a href="#" id="games">Experiencia </a>
+    <a href="#" id="music">Certificaciones </a>
+    <a href="#" id="all">Contactame </a>
+    <a href="#" id="nosotros">Acerca de mi</a>
+  </div>
+  <br>
+  <div class="temporal">
+    <button class="cerrar">X</button>
+    <h3>Tutorial Programacion Basica</h3>
+    <p>Cada Viernes en mi canal en Youtube</p>
+  </div><br>
+  <div class="row">
+    <div class="leftcolumn">
+      <ul class="listaProductos">
+        <li>
+          <div class="card">
+            <h2>Acerca de mi</h2>
+            <div class="fakeimg" style="height:15%;">
+              <img src="./imagenes//imagen_perfil_0.JPG" height="170px" alt="" class="product">
             </div>
-            <p>Estudio Ingenieria, <b>Me gusta la tecnologia,</b>  viajar, los deportes y tengo un celular chino.</p>
-        </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <h2>Acerca de mi</h2>
+            <div class="fakeimg" style="height:15%;">
+              <img src="./imagenes//imagen_perfil_0.JPG" height="170px" alt="" class="product">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <h2>Acerca de mi</h2>
+            <div class="fakeimg" style="height:15%;">
+              <img src="./imagenes//imagen_perfil_0.JPG" height="170px" alt="" class="product">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="info">
+        <h2 style="text-align: center;">Quien Soy</h2>
+        <img src="images/banner.jpg" alt="" style="width: 75%; margin-left: 10%;">
+        <p style="text-align: justify; padding-left: 10%; padding-right: 10%;">
+          Soy un estudiante de la Universidad Espol, de la carrera ingenieria en computacion,
+        residente de la ciudad Guayakill en Ecuador.</p>
+      </div>
     </div>
-    
-    </body>
+    <div class="rightcolumn">
+      <div class="card">
+        <h3>Contáctame</h3>
+        <div class="fakeimg" style="height: 9%;">
+          <label for="Aqui va un mapa">Aqui va un mapa</label>
+        </div>
+        <p class="resumen">Interesado en reunirte para algun proyectto me puedes ubicar aqui mira el mapa.
+          ¡Asi de simple! <br><br> Telefono: 00000000 <br> Guayaquil - Ecuador
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Has estado aqui este tiempo, ¡Gracias!</h3>
+        <div class="fakeimg">
+          <input class="timepage" size="5" id="timespent" name="timespent"><br>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Sigueme:</h3>
+        <a href="https://www.facebook.com" class="redes" target="_blank" style="color: navy;"><i
+            class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="https://www.twitter.com" class="redes" target="_blank" style="color: lightseagreen;"><i
+            class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com" class="redes" target="_blank" style="color: brown;"><i
+            class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <p>En redes sociales o enviame un correo</p>
+        <input id="mail" type="email" width="15px" placeholder="example@correo.com"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <p id="correoVacio" style="display: none; color: crimson; ">
+          Debe ingresar un correo</p>
+        <button id="suscribir">Enviar</i></button>
+        <p id="correoLleno" style="display: none; color: blue; ">
+          Se ha suscrito Correctamente</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="pie"><strong>Sin Copyright</strong> Pagina realizada para el primer proyecto de la materia DAWM </p>
+  </div>
+</body>
+
 </html>

@@ -1,86 +1,174 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Style the body */
-  body {
-    font-family: Arial;
-    margin: 0;
-  }
-  
-  /* Header/logo Title */
-  .header {
-    padding: 60px;
-    text-align: center;
-    background: black;
-    color: white;
-  }
-  
-  /* Style the top navigation bar */
-  .navbar {
-    display: flex;
-    background-color: black;
-  }
-  
-  /* Style the navigation bar links */
-  .navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Column container */
-  .row {  
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  /* Main column */
-  .main {
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-  }
-  
-  /* Fake image, just for this example */
-  .fakeimg {
-    background-color: #aaa;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: black;
+}
+
+/* Header/Titulo */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: white;
+}
+
+/* estilo de navbar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Aplicar estilo a los enlaces de topnav */
+.topnav a {
+  float: left;
+  display: block;
+  color:whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* Cambiar de color al pasar el mouse */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Crea dos columnas desiguales que floten una al lado de la otra. */
+/* Left column */
+.leftcolumn {   
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 60%;
+}
+
+/* Right column */
+.rightcolumn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 25%;
+  background-color: #d4d2d2;
+  background: black;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #d4d2d2;
+  width: 100%;
+  padding: 20px;
+}
+
+img{
+  border-style: solid;
+  border-color: #333;
+}
+
+#detalles{
+  display: none;
+}
+
+.timepage{
+  text-align:center;
+  width:150px;
+  font-size:40px;
+  border:1px solid #56aaf3;
+  padding:6px;
+  margin:12px 0 12px 0;
+}
+
+
+/* Agregar un efecto */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.info{
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: justify;
+  display: flex;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(250, 249, 249);
+  margin-top: 20px;
+}
+
+.pie{
+    font-size: x-small;
+}
+
+.resumen{
+    text-align: justify;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
     width: 100%;
-    padding: 20px;
+    padding: 0;
   }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: black;
-    color: white;
-  }
-  
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 700px) {
-    .row, .navbar {   
-      flex-direction: column;
-    }
-  }
+}
 
-  #perfil_foto{
-      width: 150px;
-      border-radius: 6rem;
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
   }
+}
 
+#correoVacio,#correoLleno{
+  font-size: small;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.temporal{
+  padding: 10px;
+  text-align:center;
+  background: yellowgreen;
+  border-style: dotted;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.cerrar{
+  float: right;
+}
+
+.redes{
+  font-size: x-large;
+}
+
+
+
+
+  
