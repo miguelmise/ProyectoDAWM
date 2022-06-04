@@ -10,7 +10,6 @@
 
   <div class="header">
     <h1>Miguel Angel Mise</h1>
-    
     <p style="color: aliceblue;">Estudio ingenieria, Me gusta la tecnología, los deportes y tengo
       un celular chino.</p>
   </div>
@@ -32,32 +31,73 @@
       <ul class="listaProductos">
         <li>
           <div class="card">
-            <h2>Acerca de mi</h2>
+            <h2>Estadisticas Experiencia lenguajes</h2>
             <div class="fakeimg" style="height:15%;">
-              <img src="./imagenes//imagen_perfil_0.JPG" height="170px" alt="" class="product">
+              <section class="habilidades">
+                <ul class="listaHabilidades"></ul>
+                <li class="item">
+                  <span>PHP:</span>
+                  <progress id="file" max="100" value="60"></progress>
+                </li>
+                <li class="item">
+                  <span>JAVA:</span>
+                  <progress id="file" max="100" value="70"></progress>
+                </li>
+                <li class="item">
+                  <span>HTML:</span>
+                  <progress id="file" max="100" value="50"></progress>
+                </li>
+                <li class="item">
+                  <span>CSS:</span>
+                  <progress id="file" max="100" value="50"></progress>
+                </li>
+                <li class="item">
+                  <span>SQL:</span>
+                  <progress id="file" max="100" value="60"></progress>
+                </li>
+                <li class="item">
+                  <span>JAVASCRIPT:</span>
+                  <progress id="file" max="100" value="40"></progress>
+                </li>
+              </section>
             </div>
           </div>
         </li>
         <li>
           <div class="card">
-            <h2>Acerca de mi</h2>
+            <h2>Certificaciones</h2>
             <div class="fakeimg" style="height:15%;">
-              <img src="./imagenes//imagen_perfil_0.JPG" height="170px" alt="" class="product">
+              <section class="certificaciones">
+                  <ul class="certificados">
+                      <li class="item">
+                        <span>Cloud Computing</span>
+                      </li>
+                      <li class="item">
+                        <span>Ciberseguridad en el trabajo</span>
+                      </li>
+                      <li class="item">
+                        <span>Desarrollo de Apps Moviles</span>
+                      </li>
+                  </ul>
+              </section>
             </div>
           </div>
         </li>
         <li>
           <div class="card">
-            <h2>Acerca de mi</h2>
+            <h2>Mis tutoriales</h2>
             <div class="fakeimg" style="height:15%;">
-              <img src="./imagenes//imagen_perfil_0.JPG" height="170px" alt="" class="product">
+              <section class="tutoriales">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZbgJp9XMD-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mYBhIzVDxQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </section>
             </div>
           </div>
         </li>
       </ul>
       <div class="info">
         <h2 style="text-align: center;">Quien Soy</h2>
-        <img src="images/banner.jpg" alt="" style="width: 75%; margin-left: 10%;">
+        <img src="./imagenes/imagen_perfil_0.JPG" class="mifoto" alt="foto">
         <p style="text-align: justify; padding-left: 10%; padding-right: 10%;">
           Soy un estudiante de la Universidad Espol, de la carrera ingenieria en computacion,
         residente de la ciudad Guayakill en Ecuador.</p>
@@ -82,20 +122,16 @@
       </div>
       <div class="card">
         <h3>Sigueme:</h3>
-        <a href="https://www.facebook.com" class="redes" target="_blank" style="color: navy;"><i
-            class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a href="https://www.twitter.com" class="redes" target="_blank" style="color: lightseagreen;"><i
-            class="fa fa-twitter-square" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com" class="redes" target="_blank" style="color: brown;"><i
-            class="fa fa-youtube-play" aria-hidden="true"></i></a>
-        <p>En redes sociales o enviame un correo</p>
-        <input id="mail" type="email" width="15px" placeholder="example@correo.com"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-        <p id="correoVacio" style="display: none; color: crimson; ">
-          Debe ingresar un correo</p>
-        <button id="suscribir">Enviar</i></button>
-        <p id="correoLleno" style="display: none; color: blue; ">
-          Se ha suscrito Correctamente</p>
+        <a href="https://www.facebook.com" class="redes" target="_blank" style="color: navy;">facebook</a>
+        <a href="https://www.twitter.com" class="redes" target="_blank" style="color: lightseagreen;">twitter</a>
+        <a href="https://www.youtube.com" class="redes" target="_blank" style="color: brown;">youtube</a>
+        <a href="" class="redes" target="_blank" style="color: blue;">LinkedIn</a>
+        <p>Pero si prefieres enviame un correo</p>
+        <form action="">
+          <input type="email" name="" id="" width="15px" placeholder="tucorreo@correo.com">
+          <textarea name="" id="" cols="21" rows="10"placeholder="tu mensaje"></textarea>
+          <button>Enviar</button>
+        </form>
       </div>
     </div>
   </div>

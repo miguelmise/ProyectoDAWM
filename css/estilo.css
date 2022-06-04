@@ -152,7 +152,7 @@ img{
 .temporal{
   padding: 10px;
   text-align:center;
-  background: yellowgreen;
+  background: rgb(163, 224, 103);
   border-style: dotted;
 }
 
@@ -167,6 +167,28 @@ ul li {
 .redes{
   font-size: x-large;
 }
+
+.item{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.mifoto{
+  width: 15%; 
+  margin-left: 10%;
+  border-radius: 50%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+textarea{
+  margin: 4px;
+}
+
 
 
 
