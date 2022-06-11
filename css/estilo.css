@@ -12,7 +12,7 @@ body {
 .header {
   padding: 30px;
   text-align: center;
-  background: black;
+  background-image: radial-gradient(rgb(35, 57, 33), black, black);
 }
 
 .header h1 {
@@ -71,14 +71,19 @@ body {
 
 /* Fake image */
 .fakeimg {
-  background-color: #d4d2d2;
+  background-color: white;
   width: 100%;
   padding: 20px;
+  border-radius: 5rem;
+  box-shadow: 0px 0px 30px rgb(207, 212, 179);
 }
 
 img{
-  border-style: solid;
-  border-color: #333;
+  border: none;
+}
+
+.redes img {
+  width: 15%;
 }
 
 #detalles{
@@ -97,34 +102,43 @@ img{
 
 /* Agregar un efecto */
 .card {
-  background-color: white;
+  color: rgb(2, 2, 19);
+  background-color: black;
   padding: 20px;
   margin-top: 20px;
+  border-radius: 5rem;
 }
 
 .info{
-  padding: 20px;
-  margin-top: 20px;
-  background-color: white;
+  width: 100%;
   text-align: justify;
   display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+
+.info > *{
+  margin: 10px;
 }
 
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 5px 20px;
   text-align: center;
-  background: rgb(250, 249, 249);
   margin-top: 20px;
 }
 
 .pie{
     font-size: x-small;
+    background-image: radial-gradient(rgb(35, 57, 33), black, black);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .resumen{
     text-align: justify;
+    padding: 1rem;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -160,12 +174,17 @@ ul li {
   list-style-type: none;
 }
 
+.portada{
+  width: 100%;
+  height: auto;
+}
 .cerrar{
   float: right;
 }
 
 .redes{
   font-size: x-large;
+  text-decoration: none;
 }
 
 .item{
@@ -176,7 +195,6 @@ ul li {
 
 .mifoto{
   width: 15%; 
-  margin-left: 10%;
   border-radius: 50%;
 }
 
@@ -184,13 +202,45 @@ form{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
 }
 textarea{
   margin: 4px;
 }
 
+/*tablas*/
+table {
+  padding: 5%;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+th, td {
+  border-bottom: 2px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
 
+.iconCard{
+  height: 6vh;
+  width: 6vh;
+  margin: 1%;
+  border-style: none;
+}
 
+.titulaCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: first baseline;
+}
 
-  
+iframe{
+  width: 75%;
+  height: auto;
+  margin-left: 9%;
+  border-radius: 1rem;
+}
+
+.certificaciones{
+  padding: 1rem;
+}
