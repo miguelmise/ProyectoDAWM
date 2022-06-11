@@ -47,7 +47,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 /* Crea dos columnas desiguales que floten una al lado de la otra. */
