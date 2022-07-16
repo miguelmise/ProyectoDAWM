@@ -1,0 +1,72 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  canvas {
+    height: 0px;
+    width: 0px;
+  }
+
+  #contenedor{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #alerta{
+    margin-top: 1%;
+  }
+
+  #pokemon, #tarjeta{
+    display: none;
+  }
+
+canvas {
+  width: 450px;
+  height: 50vh;
+  padding-right: 1rem; 
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3125rem 0.625rem 0 rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 575.98px) {
+  canvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: hidden;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+#tarjeta{
+  border: none;
+}
+
+#pokemon{
+  width: 18rem;
+}
+
