@@ -1,0 +1,47 @@
+.cuerpo{
+    width: 100%;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 10%, rgba(0,212,255,1) 100%); 
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: baseline;
+    padding: 1%; 
+}
+
+fieldset{
+    border-style: dashed;
+    border-color: black;
+}
+
+.cabecera{
+    width: 100%;
+    display: block;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    margin-right: 1em;
+    border-style: solid;
+    background-color: whitesmoke;
+}
+
+.container-fluid{
+    padding: 1em;
+    border-style: dotted;
+}
+
+p{
+    text-align: justify;
+}

@@ -1,0 +1,25 @@
+<div class="body">
+    <div class="login">
+        <!-- *ngIf="loading" se va a mostrar el elemento solo cuando la variable ( en login.ts) loading sea true-->
+        <mat-spinner *ngIf="loading" diameter="50" class="sppiner"></mat-spinner>
+        <!-- Se utiliza formGroup para formularios y cuando se hace submit se llama a funcion ingresar-->
+        <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="ingresar()">
+            <img src="../assets/img/usuarios.png">
+        <h1>proyecto 3</h1>
+        <mat-form-field class="ancho" appearance="fill">
+            <mat-label>Usuario</mat-label>
+            <input type="text" matInput autocomplete="off" formControlName="usuario">
+          </mat-form-field>
+          <mat-form-field class="ancho" appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput autocomplete="off" formControlName="password">
+          </mat-form-field>
+          <br/>
+          <!--[disabled]="form.invalid" el boton esta disabled mientras el formulario no este lleno-->
+          <button type="submit" mat-raised-button class="ancho button" color="primary" [disabled]="form.invalid">ingreso</button>
+    
+        </form>
+        </div>
+    
+</div>
+  

@@ -1,0 +1,71 @@
+<div class="container">
+    <mat-toolbar>
+        <span>Modelos Autos</span>
+        <div class="example-spacer"></div>
+        <!-- <button mat-raised-button routerLink="/dashboard/crear">Agregar</button> -->
+      </mat-toolbar>
+
+      <div *ngIf="listModelos.length>0">
+
+        <mat-form-field appearance="standard">
+            <mat-label>Buscar Modelo</mat-label>
+            <input matInput (keyup)="applyFilter($event)" placeholder="Buscar Modelo" #input>
+          </mat-form-field>
+    
+          <div class="mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource" matSort>
+    
+              
+                <!-- Position Column -->
+                <ng-container matColumnDef="nombreMarca">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> Marca. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.idMarca_marca.nombreMarca}} </td>
+                </ng-container>
+              
+                <!-- Name Column -->
+                <ng-container matColumnDef="nombreModelo">
+                  <th mat-header-cell *matHeaderCellDef> Modelo </th>
+                  <td mat-cell *matCellDef="let element"> {{element.nombreModelo}} </td>
+                </ng-container>
+              
+                <!-- Weight Column -->
+                <ng-container matColumnDef="paisMarca">
+                  <th mat-header-cell *matHeaderCellDef> País </th>
+                  <td mat-cell *matCellDef="let element"> {{element.idMarca_marca.paisMarca}} </td>
+                </ng-container>
+              
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="tipoCombustible">
+                  <th mat-header-cell *matHeaderCellDef> Combustible </th>
+                  <td mat-cell *matCellDef="let element"> {{element.tipoCombustible}} </td>
+                </ng-container>
+        
+                <!-- Acciones Column -->
+                <ng-container matColumnDef="acciones">
+                  <th mat-header-cell *matHeaderCellDef>Acciones</th>
+                  <td mat-cell *matCellDef="let element; let i = index" class="acciones">
+                    
+                    <a class="pointer" matTooltip="Ver Modelo" routerLink="/dashboard/reportes/{{element.idModelo}}">
+                      <mat-icon>search</mat-icon></a>
+                    <!--<a class="pointer" matTooltip="Editar Modelo">
+                        <mat-icon>edit</mat-icon>
+                    </a>-->
+                   <!-- <a class="pointer" (click)="eliminarModelo(i)" matTooltip="Eliminar Modelo">
+                        <mat-icon>delete</mat-icon>
+                    </a> -->
+                  </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
+              <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+              
+          </div>
+      </div>
+
+      <h2 *ngIf="listModelos.length==0">No hay modelos para mostrar</h2>
+
+      
+      
+</div>

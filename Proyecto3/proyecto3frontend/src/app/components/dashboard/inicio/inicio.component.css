@@ -1,0 +1,11 @@
+.principal{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 50%;
+}
+.botones{
+    display: flex;
+    justify-content: center
+}

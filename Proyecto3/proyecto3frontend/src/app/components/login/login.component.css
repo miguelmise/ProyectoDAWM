@@ -1,0 +1,28 @@
+.login{
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+}
+img{
+    width: 50%;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.ancho{
+    width: 80%;
+}
+
+.button{
+    height: 50px;
+}
+
+.sppiner{
+    margin: 0 auto;
+}

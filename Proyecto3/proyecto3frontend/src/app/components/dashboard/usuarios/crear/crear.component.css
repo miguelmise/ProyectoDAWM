@@ -1,0 +1,14 @@
+#card{
+    margin-top: 10px;
+}
+.ancho{
+    width: 80%;
+}
+.boton{
+    margin: 0 5px;
+}
+@media screen and (max-width: 300px) {
+    #imagen{
+        display:none !important;       
+    }
+  }

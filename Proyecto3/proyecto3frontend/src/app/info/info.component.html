@@ -1,0 +1,41 @@
+<div class="container">
+    
+    <div class="cabecera">
+        <mat-toolbar class="barra">
+            <span>API REST INFORMACION</span>
+            <button routerLink="/dashboard" mat-flat-button color="Volver">Atrás</button>
+          </mat-toolbar>
+    </div>
+    <div class="cuerpo">
+        
+        <mat-card>
+            <mat-card-title>
+                Información
+            </mat-card-title>
+            <mat-card-subtitle>
+                <p>Esta es una API solo de consumo : solo el método HTTP GET, está disponible en los recursos.
+                    No se requiere autenticación para acceder a esta API, y todos los recursos están completamente 
+                    abiertos y disponibles. </p>
+            </mat-card-subtitle>
+            <mat-card-content>
+                <div class="container-fluid">
+                    <h3>Mysql (endpoint)</h3>
+                    <p><strong>Parametros</strong> ninguno  , <strong>Tipo</strong> : Get    , <strong>Retorno</strong>: Json </p>
+                    <p>Servidor Heroku</p>
+                    <p>GET: https://proyecto3express.herokuapp.com/modelo </p>
+                    <p>GET: https://proyecto3express.herokuapp.com/marca </p>
+                </div>
+                <div class="container-fluid">
+                    <h3>Firebase (endpoint)</h3>
+                    <p><strong>Parametros</strong> Numero  , <strong>Tipo</strong> : Get    , <strong>Retorno</strong>: Json </p>
+                    <p>GET: https://proyecto3bdnorelacional-default-rtdb.firebaseio.com/info_modelos.json</p>
+                </div>
+                
+            </mat-card-content>
+            <mat-card-footer>
+                Autor: Miguel Mise - 2022 - DAWM
+            </mat-card-footer>
+        </mat-card>
+    </div>
+    
+</div>

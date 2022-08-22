@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    margin-top: 5px;
+  }
+.acciones{
+    text-align: right;
+}
+th{
+    width: 22%;
+}
+
+.pointer{
+    cursor: pointer;
+    color: blue;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
